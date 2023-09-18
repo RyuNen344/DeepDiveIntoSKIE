@@ -3,21 +3,16 @@ import shared
 
 class CallSealedClass {
     func call(error: SealedError) {
-        switch error {
-        case let error as IOError:
-            print("io error")
-            switch error {
-                case let io as FileReadError:
-                    print("file read error \(io.file)")
-            case let database as DatabaseError:
-                    print("database error \(database.source)")
-                default:
-                    fatalError("unknown io error")
+        switch onEnum(of: error) {
+        case .iOError(let ioError):
+            switch onEnum(of: ioError) {
+            case .databaseError(let db):
+                print("database error \(db.source)")
+            case .fileReadError(let file):
+                print("file read error \(file.file)")
             }
-        case _ as RuntimeError:
+        case .runtimeError(_):
             print("runtime error")
-        default:
-            fatalError("unknown error")
         }
     }
 }
