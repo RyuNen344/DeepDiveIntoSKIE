@@ -1,5 +1,6 @@
 [versions]
 agp = "8.1.1"
+skie = "0.4.20"
 org-jetbrains-kotlin-android = "1.9.10"
 core-ktx = "1.12.0"
 junit = "4.13.2"
@@ -15,10 +16,12 @@ androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+skie-annotations = { module = "co.touchlab.skie:configuration-annotations", version.ref = "skie" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+skie = { id = "co.touchlab.skie", version.ref = "skie" }
 
 [bundles]
 
