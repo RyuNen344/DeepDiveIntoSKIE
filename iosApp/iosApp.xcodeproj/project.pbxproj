@@ -13,6 +13,7 @@
 		37149E182AB85772009E7FEF /* CallKotlinEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37149E172AB85772009E7FEF /* CallKotlinEnum.swift */; };
 		37C629922AB8B2A400F01FBC /* CallSealedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C629912AB8B2A400F01FBC /* CallSealedClass.swift */; };
 		37CB4A422ABA1E9B00C0DF9B /* Suspend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB4A412ABA1E9B00C0DF9B /* Suspend.swift */; };
+		37E809C52B13F4A40032F722 /* FlowCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E809C42B13F4A40032F722 /* FlowCheck.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		37149E172AB85772009E7FEF /* CallKotlinEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKotlinEnum.swift; sourceTree = "<group>"; };
 		37C629912AB8B2A400F01FBC /* CallSealedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSealedClass.swift; sourceTree = "<group>"; };
 		37CB4A412ABA1E9B00C0DF9B /* Suspend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suspend.swift; sourceTree = "<group>"; };
+		37E809C42B13F4A40032F722 /* FlowCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCheck.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				058557D7273AAEEB004C7B11 /* Preview Content */,
 				37149E172AB85772009E7FEF /* CallKotlinEnum.swift */,
 				37C629912AB8B2A400F01FBC /* CallSealedClass.swift */,
+				37E809C42B13F4A40032F722 /* FlowCheck.swift */,
 				37CB4A412ABA1E9B00C0DF9B /* Suspend.swift */,
 			);
 			path = iosApp;
@@ -195,6 +198,7 @@
 				37149E182AB85772009E7FEF /* CallKotlinEnum.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				37E809C52B13F4A40032F722 /* FlowCheck.swift in Sources */,
 				37CB4A422ABA1E9B00C0DF9B /* Suspend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

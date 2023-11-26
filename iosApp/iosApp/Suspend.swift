@@ -2,13 +2,12 @@ import Foundation
 import shared
 
 func callKmpSuspend() {
-    let cancellationHandler = Skie_CancellationHandler()
-    Task {
-        try! await SuspendKt.callSuspend()
-        try await _Concurrency.withTaskCancellationHandler(operation: {
+    let task = Task {
+        do {
             try await SuspendKt.callSuspend()
-        }, onCancel: {
-            cancellationHandler.cancel()
-        })
+        } catch {
+            guard !Task.isCancelled else { return }
+            // TODO: handle error
+        }
     }
 }
